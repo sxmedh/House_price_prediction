@@ -16,7 +16,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-
+    <link rel="stylesheet" href="static/styles.css" />
     <title>Document</title>
   </head>
   <body>
@@ -42,34 +42,42 @@
         </button>
       </div>
     </nav>
-    <div class="container">
-      <!-- # Input in the form : Location, BHK, Bath, Balcony, Sqft, area_type, availability. -->
-      <form action="/result" method="get">
-        <h3>Place</h3>
-        <select id="place" name="place"></select>
-        <h3>Bhk</h3>
-        <input name="bhk" type="number" />
-        <h3>Bath</h3>
-        <input name="bath" type="number" />
-        <h3>Balcony</h3>
-        <input name="balcony" type="number" />
-        <h3>Sqft</h3>
-        <input name="sqft" type="number" />
-        <h3>Area type</h3>
-        <select id="area_type" name="area_type">
-          <option value="Super built-up  Area">Super built-up Area</option>
-          <option value="Plot  Area">Plot Area</option>
-          <option value="Built-up  Area">Built-up Area</option>
-          <option value="Carpet  Area">Carpet Area</option>
-        </select>
-        <h3>Availability</h3>
-        <select id="availability" name="availability">
-          <option value="Not Ready">Not Ready</option>
-          <option value="Ready To Move">Ready To Move</option>
-        </select>
-        <button type="submit">submit</button>
-      </form>
-    </div>
+
+    <!-- # Input in the form : Location, BHK, Bath, Balcony, Sqft, area_type, availability. -->
+    <form type="reset" action="/result" method="get">
+      <h3>Place</h3>
+      <select id="place" name="place"></select>
+      <h3>Bhk</h3>
+      <input name="bhk" type="number" required />
+      <h3>Bath</h3>
+      <input name="bath" type="number" required />
+      <h3>Balcony</h3>
+      <input name="balcony" type="number" required />
+      <h3>Sqft</h3>
+      <input name="sqft" type="number" required />
+      <h3>Area type</h3>
+      <select id="area_type" name="area_type">
+        <option value="Super built-up  Area">Super built-up Area</option>
+        <option value="Plot  Area">Plot Area</option>
+        <option value="Built-up  Area">Built-up Area</option>
+        <option value="Carpet  Area">Carpet Area</option>
+      </select>
+      <h3>Availability</h3>
+      <select id="availability" name="availability">
+        <option value="Not Ready">Not Ready</option>
+        <option value="Ready To Move">Ready To Move</option>
+      </select>
+      <div>
+        <button
+          type="submit"
+          class="btn btn-dark"
+          style="margin: 3rem; width: 15rem; height: 3rem"
+        >
+          submit
+        </button>
+      </div>
+    </form>
+
     <script>
       // Sample array containing values for the options
       const myArray = [

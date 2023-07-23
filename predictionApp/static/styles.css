@@ -1,0 +1,98 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.42em;
+  color: #a7a1ae;
+  background-color: #1f2739;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 300;
+  line-height: 1em;
+  text-align: center;
+  color: #4dc3fa;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 100;
+  text-align: center;
+  display: block;
+  line-height: 1em;
+  padding-bottom: 2em;
+  color: #fb667a;
+}
+
+h2 a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fb667a;
+  text-decoration: none;
+}
+
+.blue {
+  color: #185875;
+}
+.yellow {
+  color: #fff842;
+}
+
+select {
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+
+  width: 20em;
+  height: 3em;
+  padding: 0 4em 0 1em;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg)
+      no-repeat right 0.8em center / 1.4em,
+    linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.3) 3em,
+      rgba(255, 255, 255, 0.2) 3em
+    );
+  color: rgb(255, 255, 255);
+  border-radius: 0.25em;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-weight: 500;
+}
+input {
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  font-weight: 200;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.3) 3em,
+    rgba(255, 255, 255, 0.2) 3em
+  );
+  color: rgb(255, 255, 255);
+  border-radius: 0.25em;
+  width: 20em;
+  height: 3em;
+  padding: 0 4em 0 1em;
+
+  color: rgb(255, 255, 255);
+  border-radius: 0.25em;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
+h3 {
+  padding: 1rem;
+}
+form {
+  text-align: center;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

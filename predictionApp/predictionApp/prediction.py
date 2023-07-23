@@ -360,7 +360,9 @@ def predict(location, bhk, bath, balcony, sqft, area_type, availability):
     if avail_index >= 0:
         x[avail_index] = 1
 
-    return model.predict([x])[0]
+    ans = model.predict([x])[0]
+    rounded_ans = round(ans, 2)
+    return rounded_ans
 
 
 # warnings.filterwarnings(
